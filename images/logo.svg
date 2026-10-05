@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 280" width="100%" height="100%">
+  <defs>
+    <linearGradient id="silver" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="35%" stop-color="#d4d8df"/>
+      <stop offset="70%" stop-color="#8a93a0"/>
+      <stop offset="100%" stop-color="#4f5663"/>
+    </linearGradient>
+    <linearGradient id="blueGlow" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00a8ff"/>
+      <stop offset="100%" stop-color="#0057b8"/>
+    </linearGradient>
+    <filter id="drop" x="-10%" y="-10%" width="125%" height="125%">
+      <feDropShadow dx="0" dy="4" stdDeviation="4" flood-color="#000000" flood-opacity="0.35"/>
+    </filter>
+  </defs>
+
+  <g filter="url(#drop)">
+    <!-- Внешний щит -->
+    <polygon points="260,18 360,48 375,135 260,205 145,135 160,48" 
+             fill="none" stroke="url(#silver)" stroke-width="7" stroke-linejoin="round"/>
+    <!-- Внутренний неоновый контур щита -->
+    <polygon points="260,28 350,55 362,130 260,193 158,130 170,55" 
+             fill="none" stroke="url(#blueGlow)" stroke-width="3" stroke-linejoin="round"/>
+
+    <!-- Скоростные синие линии слева -->
+    <path d="M120,118 L190,118 M130,126 L175,126 M145,110 L185,110" 
+          stroke="url(#blueGlow)" stroke-width="3.5" stroke-linecap="round"/>
+
+    <!-- Силуэт спорткара -->
+    <path d="M175,128 Q200,95 245,90 Q275,82 315,96 Q345,108 360,128" 
+          fill="none" stroke="url(#silver)" stroke-width="6" stroke-linecap="round"/>
+    <!-- Нижняя грань кузова -->
+    <path d="M165,132 L200,132 M240,132 L285,132 M325,132 L365,132" 
+          stroke="url(#silver)" stroke-width="4.5" stroke-linecap="round"/>
+
+    <!-- Переднее и заднее колеса -->
+    <circle cx="218" cy="132" r="14" fill="#1b2028" stroke="url(#silver)" stroke-width="4"/>
+    <circle cx="218" cy="132" r="5" fill="#00a8ff"/>
+    <circle cx="308" cy="132" r="14" fill="#1b2028" stroke="url(#silver)" stroke-width="4"/>
+    <circle cx="308" cy="132" r="5" fill="#00a8ff"/>
+
+    <!-- Динамическая литера A в центре -->
+    <path d="M260,35 L285,135 L268,135 L260,105 L242,135 L225,135 Z" fill="url(#silver)"/>
+    <path d="M260,35 L242,135 L225,135 L252,35 Z" fill="url(#blueGlow)"/>
+    <!-- Звезда по центру -->
+    <polygon points="260,92 264,103 275,103 266,110 269,120 260,114 251,120 254,110 245,103 256,103" 
+             fill="url(#silver)" stroke="#0057b8" stroke-width="1"/>
+
+    <!-- Надпись AST3RR -->
+    <text x="260" y="240" 
+          font-family="Arial Black, Impact, sans-serif" 
+          font-size="46" 
+          font-weight="900" 
+          letter-spacing="4" 
+          text-anchor="middle" 
+          fill="url(#silver)">AST<tspan fill="url(#blueGlow)">3</tspan>RR</text>
+
+    <!-- Надпись AUTO -->
+    <text x="260" y="270" 
+          font-family="Arial, Helvetica, sans-serif" 
+          font-size="20" 
+          font-weight="800" 
+          letter-spacing="9" 
+          text-anchor="middle" 
+          fill="#d4d8df">AUTO</text>
+  </g>
+</svg>
