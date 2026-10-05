@@ -27,8 +27,8 @@
 
   <main>
     <nav class="breadcrumbs" aria-label="Хлебные крошки">
-      <a href="index.html">Главная</a>
-      <span>Каталог</span>
+        <a class="breadcrumbs__link" href="index.html">Главная</a>
+        <span class="breadcrumbs__current">Каталог</span>
     </nav>
 
     <section class="section">
@@ -43,28 +43,33 @@
     <section class="section">
       <h2>Список товаров</h2>
 
-      <article class="product-card">
-        <h3>Товар 1</h3>
-        <p>Краткое описание учебного товара.</p>
-        <p>Цена: 1000 руб.</p>
-        <a class="button" href="index.html#popular">Подробнее</a>
-      </article>
+      <article class="product-card product-card--featured">
+  <h3 class="product-card__title">Сыр</h3>
+  <p class="product-card__description">Элитный сыр (не протухший).</p>
+  <p class="product-card__price">Цена: 10000 руб.</p>
+  <button
+    class="button product-card__button"
+    type="button"
+    data-product="Товар 1"
+  >
+    Заказать
+  </button>
+</article>
 
-      <article class="product-card">
-        <h3>Товар 2</h3>
-        <p>Краткое описание учебного товара.</p>
-        <p>Цена: 1500 руб.</p>
-        <a class="button" href="index.html#popular">Подробнее</a>
-      </article>
 
-      <article class="product-card">
-        <h3>Товар 3</h3>
-        <p>Краткое описание учебного товара.</p>
-        <p>Цена: 2000 руб.</p>
-        <a class="button" href="index.html#popular">Подробнее</a>
-      </article>
-    </section>
-  </main>
+      <article class="product-card product-card--featured">
+  <h3 class="product-card__title">Колбаса</h3>
+  <p class="product-card__description">Вкусная элитная дорогая колбаса.</p>
+  <p class="product-card__price">Цена: 1000 руб.</p>
+  <button
+    class="button product-card__button"
+    type="button"
+    data-product="Товар 1"
+  >
+    Заказать
+  </button>
+</article>
+
 
   <footer>
     <p>&copy; 2026 Учебный проект. Все права защищены.</p>
